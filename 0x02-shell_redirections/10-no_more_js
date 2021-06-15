@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -fvr \*.js
+rm -fvr . *.js
