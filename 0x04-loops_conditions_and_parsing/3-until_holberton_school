@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays Holberton School 10 times using untiiloop
+
+i=20
+
+until [ $i -le 10 ]
+      
+do
+    
+echo Holberton School
+
+i=$((i-1))
+ 
+done
