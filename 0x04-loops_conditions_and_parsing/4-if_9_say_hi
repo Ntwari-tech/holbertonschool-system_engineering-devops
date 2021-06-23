@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Write a Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line
+#Write a Bash script that displays Holberton School 10 times, but for the 9th OBiteration, displays Holberton School and then Hi on a new line
 
 i=0
 while [ $i -ne 9 ]
@@ -7,7 +7,7 @@ do
  echo Holberton School
  ((i++))
  
- if [[ i -eq 8 ]]
+ if [ $i -eq 8 ]
  then
      echo Holberton School
      echo Hi
