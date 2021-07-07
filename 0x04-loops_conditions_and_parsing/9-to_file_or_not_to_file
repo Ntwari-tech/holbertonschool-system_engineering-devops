@@ -5,6 +5,6 @@ y="holbertonschool"
 
 if [ ! -e $y ]; then echo "$y file does not exist"; else echo "$y file exists";
 
-if [ ! -s $y ]; then ecno "$y file is empy"; else echo "$y file is not empty"; fi
+if [ ! -s $y ]; then echo "$y file is empty"; else echo "$y file is not empty"; fi
 
 if [ -f $y ]; then echo "$y is a regular file"; fi; fi
