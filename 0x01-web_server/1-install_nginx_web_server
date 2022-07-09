@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Installing nginx
+brew install nginx
+sudo brew services restart nginx
+echo 'Hello World!' | nano /var/www/html/index.html
