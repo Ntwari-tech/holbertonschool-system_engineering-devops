@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Installing nginx
+brew install nginx
+sudo brew services restart nginx
+echo 'Hello World!' | nano /var/www/html/index.html
+
+sudo touch /var/www/html/error.html
+sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/error.html
+findit="\tlocation / {"
+replace="\terror_page 404 /error.html;\n\n\tlocation /redirect_me {\n\t\treturn 301 \$scheme:https://youtu.be/OE2NPmqZ9nM;\n\t}\n\n\tlocation / {"
+sudo sed -i "s@^$findit@$replace@" /etc/nginx/sites-available/default
+sudo service nginx restart
